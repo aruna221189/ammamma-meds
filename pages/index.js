@@ -19,7 +19,7 @@ const Medicine = ({ medicine, printObject }) => {
       <input
         onChange={getValue}
         ref={inputRef}
-        className="py-2 px-4 border border-black rounded-lg col-span-2 bg-white placeholder:text-black text-xs lg:text-2xl"
+        className="py-2 px-4 border border-black rounded-lg col-span-2 bg-white placeholder:text-black text-black text-xs lg:text-2xl"
         type="text"
         placeholder="Existing tablet count"
       />
@@ -93,7 +93,7 @@ export default function Home() {
       <div className="p-4 lg:max-w-1/4">
         <button
           onClick={copyToClipboard}
-          className="border border-black py-2 px-4 w-full bg-black text-white cursor-pointer"
+          className="border border-white py-2 px-4 w-full bg-black text-white cursor-pointer"
         >
           Copy
         </button>
