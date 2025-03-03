@@ -19,7 +19,7 @@ const Medicine = ({ medicine, printObject }) => {
       <input
         onChange={getValue}
         ref={inputRef}
-        className="py-2 px-4 border border-black rounded-lg col-span-2 col-span-4"
+        className="py-2 px-4 border border-black rounded-lg col-span-2 col-span-4 bg-white"
         type="text"
         placeholder="Existing tablet count"
       />
