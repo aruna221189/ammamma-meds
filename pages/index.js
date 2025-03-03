@@ -66,8 +66,8 @@ export default function Home() {
     const wrapperElement = document.createElement('div');
     for (const [key, value] of Object.entries(printObject)) {
       wrapperElement.append(`
-${key} ${value}
-`);
+        ${key} ${value}
+      `);
     }
     let tempInput = document.createElement('textarea');
     const text = wrapperElement?.innerText?.replace(/<br\s*[\/]?>/gi, '');
