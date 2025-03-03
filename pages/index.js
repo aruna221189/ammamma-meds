@@ -14,12 +14,12 @@ const Medicine = ({ medicine, printObject }) => {
     setValue(neededStrips);
   };
   return (
-    <div className="grid grid-cols-6 items-center gap-2 lg:gap-6">
+    <div className="grid grid-cols-4 items-center gap-2 lg:gap-6">
       <h2 className="text-xs lg:text-2xl font-semibold col-span-1">{medicine?.name}</h2>
       <input
         onChange={getValue}
         ref={inputRef}
-        className="py-2 px-4 border border-black rounded-lg col-span-2 col-span-4 bg-white"
+        className="py-2 px-4 border border-black rounded-lg col-span-2 bg-white placeholder:text-black text-xs lg:text-2xl"
         type="text"
         placeholder="Existing tablet count"
       />
