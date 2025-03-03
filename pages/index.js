@@ -93,7 +93,7 @@ export default function Home() {
       <div className="p-4 lg:max-w-1/4">
         <button
           onClick={copyToClipboard}
-          className="border border-white py-2 px-4 w-full bg-black text-white cursor-pointer"
+          className="border border-[#fff] py-2 px-4 w-full bg-black text-white cursor-pointer"
         >
           Copy
         </button>
