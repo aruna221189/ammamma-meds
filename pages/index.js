@@ -14,16 +14,16 @@ const Medicine = ({ medicine, printObject }) => {
     setValue(neededStrips);
   };
   return (
-    <div className="grid grid-cols-3 items-center gap-6">
-      <h2 className="text-2xl font-semibold">{medicine?.name}</h2>
+    <div className="grid grid-cols-6 items-center gap-2 lg:gap-6">
+      <h2 className="text-xs lg:text-2xl font-semibold col-span-1">{medicine?.name}</h2>
       <input
         onChange={getValue}
         ref={inputRef}
-        className="py-2 px-4 border border-black rounded-lg"
+        className="py-2 px-4 border border-black rounded-lg col-span-2 col-span-4"
         type="text"
         placeholder="Existing tablet count"
       />
-      <h2 className="displayValue text-2xl font-semibold">{value} strips</h2>
+      <h2 className="displayValue text-xs lg:text-2xl font-semibold col-span-1">{value} strips</h2>
     </div>
   );
 };
@@ -79,7 +79,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="flex flex-col gap-6 p-4 max-w-1/2">
+      <div className="flex flex-col gap-6 p-4 lg:max-w-1/2">
         {medicines?.map((medicine, index) => {
           return (
             <Medicine
@@ -90,7 +90,7 @@ export default function Home() {
           );
         })}
       </div>
-      <div className="p-4 max-w-1/4">
+      <div className="p-4 lg:max-w-1/4">
         <button
           onClick={copyToClipboard}
           className="border border-black py-2 px-4 w-full bg-black text-white cursor-pointer"
